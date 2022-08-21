@@ -1,0 +1,38 @@
+---
+import BaseHead from "../components/Head/BaseHead.astro";
+import Nav from "../components/Nav.astro";
+import HomeHeader from "../components/HomeHeader.astro";
+import Footer from "../components/Footer/Footer.astro";
+
+const title = "About alex";
+const description = "A Theme for the small world";
+const seoDescription = "This website is made for alex";
+---
+
+<html lang="en">
+    <head>
+        <BaseHead title={title} description={seoDescription} />
+    </head>
+
+    <body
+        class="bg-white text-black font-body leading-normal personality-casual"
+    >
+        <Nav />
+
+        <main class="py-12 lg:py-20">
+            <article class="max-w-6xl mx-auto px-3">
+                <HomeHeader title={title} description={description} />
+                <section
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8"
+                    data-test="articles-section"
+                >
+                    <h1>
+                        Hey, hier kommt Alex. Vorhang auf für seinen Blog...
+                    </h1>
+                </section>
+            </article>
+        </main>
+
+        <Footer />
+    </body>
+</html>
