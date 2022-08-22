@@ -1,0 +1,35 @@
+---
+import Footer from "../components/Footer/Footer.astro";
+import BaseHead from "../components/Head/BaseHead.astro";
+import Nav from "../components/Nav.astro";
+
+const title = "Datenschutz";
+const seoDescription = "Datenschutz";
+---
+
+<html lang="en">
+    <head>
+        <BaseHead title={title} description={seoDescription} />
+    </head>
+
+    <body
+        class="bg-white text-black font-body leading-normal personality-casual"
+    >
+        <Nav />
+
+        <main class="py-12 lg:py-20">
+            <article class="max-w-6xl mx-auto px-3">
+                <section
+                    class="grid grid-cols-1 gap-6 py-8"
+                    data-test="articles-section"
+                >
+                    <h1>Datenschutz</h1>
+
+                    <p>Hier werden Informationen zum Datenschutz stehen</p>
+                </section>
+            </article>
+        </main>
+
+        <Footer />
+    </body>
+</html>
