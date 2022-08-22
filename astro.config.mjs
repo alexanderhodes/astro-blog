@@ -3,5 +3,10 @@ import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   integrations: [sitemap()],
-  site: "https://astro-theme-creek.netlify.app/",
+  site: "https://gleeful-elf-90e583.netlify.app/",
+  vite: {
+    ssr: {
+      external: ["svgo"],
+    },
+  },
 });
